@@ -13,7 +13,7 @@ Create environment and install things (note this assumes conda).
     conda config --add channels conda-forge
     conda install opencv
     conda update pip
-    conda install scipy matplotlib 
+    conda install scipy matplotlib
 
 Install spinnaker sdk:
 https://www.flir.com/products/spinnaker-sdk/
@@ -29,7 +29,9 @@ Note on installing opencv:
 
 Make sure PySpin will import (might need to import numpy first because weirdness).
 
-## Working with opencv
-From point grey:
-https://www.ptgrey.com/KB/10861
-OpenCV is an open-source computer vision library that allows you to perform image processing on FLIR machine vision cameras. This application note provides information on how to install and use OpenCV in Visual Studio. OpenCV does not support machine vision standards such as USB3 Vision and GigE Vision, therefore it is not recommended to grab images using OpenCV functions. Instead, we recommend using the Spinnaker SDK to grab images and convert them to OpenCV images, and then do your OpenCV magic...
+## 3. Use it
+To just stream images, at command line enter:
+  python point_grey.py 1  
+To mess around with tracking:
+  python point_grey.py 2
+This will grab some background images and then subtract the background, do a gaussian smooth, and threshold, and get a contour of the remaining binary blobs picking the biggest blob to track.
