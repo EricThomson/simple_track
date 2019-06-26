@@ -1,0 +1,53 @@
+INFO:root:
+**Testing PgCam()**
+DEBUG:root:Working with a Point Grey Research Grasshopper3 GS3-U3-41C6NIR camera
+INFO:root:
+ACQUISITION MODE 
+DEBUG:root:    acquisition_mode available
+DEBUG:root:    continuous_mode readable
+INFO:root:    Acquisition Mode successfully set to Continuous...
+INFO:root:
+ROI
+DEBUG:root:    ROI width_node available.
+DEBUG:root:    ROI width_node is writeable
+INFO:root:    Width set to 640.
+DEBUG:root:    ROI height node available.
+DEBUG:root:    ROI height node is writeable.
+INFO:root:    Height set to 320
+DEBUG:root:    ROI x available
+DEBUG:root:    ROI x writeable
+INFO:root:    x offset set to 500
+INFO:root:    y offset set to 200
+INFO:root:    ROI successfully enabled
+INFO:root:
+FRAME RATE
+DEBUG:root:    frame rate control available and writeable
+DEBUG:root:    Frame rate mode is read/write.
+DEBUG:root:    frame_rate_auto available
+DEBUG:root:    frame_rate_auto writeable
+DEBUG:root:    got frame_auto_node off
+DEBUG:root:    frame_auto_off available
+DEBUG:root:    frame_rate_auto readable
+INFO:root:    Frame Rate Auto set to Off...
+DEBUG:root:    frame rate mode enabled acquired
+DEBUG:root:    rate_mode_enable available
+DEBUG:root:    rate_mode_enable writeable
+INFO:root:    enable_rate_mode set to True
+INFO:root:    Frame rate min|max: 2.8395862579345703 | 542.421875.
+DEBUG:root:    Frame rate mode is read/write.
+DEBUG:root:    Frame rate successfully set to 20.0 Hz
+INFO:root:
+EXPOSURE
+DEBUG:root:    exposure_auto_node is in read/write mode
+DEBUG:root:    Automatic exposure disabled...
+DEBUG:root:    exposure time is r/w
+INFO:root:    min/max exposure times (ms): 0.01609325408935547 | 49.929678440093994
+DEBUG:root:    Exposure sucessfully set to 15.0 ms
+INFO:root:
+GAIN
+DEBUG:root:    autogain in rw mode
+DEBUG:root:    Automatic gain disabled...
+INFO:root:    Gain: current, min|max: 0.0, 0.0 | 9.827198028564453 
+DEBUG:root:    Gain is in RW mode
+DEBUG:root:    Gain successfully set to 0.6.
+INFO:root:Streaming stopped
