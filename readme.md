@@ -1,3 +1,6 @@
+# simple track
+Demonstration of how to use Spinnaker Api with python for a (too) simple tracking app that uses thresholding and background subtraction. Note this is not meant to be a production-grade tracker, but just something to help get started with your Point Grey camera in Python.
+
 ## When you get your camera
 ### 1. Make sure camera works    
 Install spinnaker, and run spinview and run camera in continuous mode just to ensure it works. Explore the camera, transport layer, and stream parameters in the dropdown menu corresponding to your camera on the left. These are all features that are accessible via the API so make sure you are familiar with the range of options available and some of the terminology associated with your particular setup (e.g., transport layer = TL in the code). toggle the Recording window (red filled circle) and record some video.
@@ -10,7 +13,7 @@ Create environment and install things (note this assumes conda).
     conda config --add channels conda-forge
     conda install opencv
     conda update pip
-    conda install scipy matplotlib spyder -y
+    conda install scipy matplotlib 
 
 Install spinnaker sdk:
 https://www.flir.com/products/spinnaker-sdk/
