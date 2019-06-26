@@ -1,5 +1,5 @@
 # simple track
-Demonstration of how to use Spinnaker Api with python for a (too) simple tracking app that uses thresholding and background subtraction. Note this is not meant to be a production-grade tracker, but just something to help get started with your Point Grey camera in Python.
+Demonstration of how to use Spinnaker Api with python for a (too) simple tracking app that uses bg subtraction, thresholding, and smoothing in real time using OpenCV. Note this is not meant to be a production-grade tracker, but just something to help get started with your Point Grey camera using Python/OpenCV.
 
 ## When you get your camera
 ### 1. Make sure camera works    
