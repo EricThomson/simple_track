@@ -1,6 +1,8 @@
 # simple track
 Demonstration of how to use Spinnaker Api with python for a (too) simple tracking app that uses bg subtraction, thresholding, and smoothing in real time using OpenCV. Note this is not meant to be a production-grade tracker, but just something to help get started with your Point Grey camera using Python/OpenCV.
 
+The main function is point_grey.py, and it has lots of lines commented out you can uncomment to show different aspects of the algorithm in action, and logging functionality where you can set the level to your comfort (e.g., warning, error, debug, etc) to see different levels of verbosity.
+
 ## When you get your camera
 ### 1. Make sure camera works    
 Install spinnaker sdk:
