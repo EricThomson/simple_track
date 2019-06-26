@@ -30,8 +30,11 @@ Note on installing opencv:
 Make sure PySpin will import (might need to import numpy first because weirdness).
 
 ## 3. Use it
-To just stream images, at command line enter:
-  python point_grey.py 1  
-To mess around with tracking:
-  python point_grey.py 2
-This will grab some background images and then subtract the background, do a gaussian smooth, and threshold, and get a contour of the remaining binary blobs picking the biggest blob to track.
+There are two modes you can test in the main function, `point_grey.py`. To just stream images (at command line):
+
+    python point_grey.py 1  
+
+To run the simple tracker:
+
+    python point_grey.py 2
+This will grab some background images and then subtract the background, do a gaussian smooth, threshold, and get a contour of the remaining binary blobs picking the biggest blob to track. There will be sliders for the threshold and width of the gaussian filter you can mess around with in real time.
