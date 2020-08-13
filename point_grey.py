@@ -169,7 +169,7 @@ class PgCamera:
         if self.frame_rate > rate_max:
             logging.warning("Attempt to set fps greater than max, setting to {0}".format(rate_max))
             self.frame_rate = rate_max
-        elif frame_rate < rate_min:
+        elif self.frame_rate < rate_min:
             logging.warning("Attempt to set fps less than min, setting to {0}".format(rate_min))
             self.frame_rate = rate_min
 
